@@ -1106,7 +1106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemySpawn: {fileID: 1012586532544776, guid: c1987fb19cf4b46a6a8fdf10d43948af, type: 2}
-  enemyCount: 100
+  enemyCount: 5
 --- !u!4 &623939121
 Transform:
   m_ObjectHideFlags: 0
