@@ -574,3 +574,6 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 
+.DS_Store
+
+build-ios/Libraries
