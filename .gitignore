@@ -577,3 +577,5 @@ DerivedData/
 .DS_Store
 
 build-ios/Libraries
+
+build-ios/Classes
