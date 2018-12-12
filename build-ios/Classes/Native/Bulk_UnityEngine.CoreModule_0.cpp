@@ -666,6 +666,8 @@ struct Logger_t274032455;
 struct LowerResBlitTexture_t2609707774;
 // UnityEngine.Material
 struct Material_t340375123;
+// UnityEngine.Material[]
+struct MaterialU5BU5D_t561872642;
 // UnityEngine.Mesh
 struct Mesh_t3648964284;
 // UnityEngine.MeshFilter
@@ -724,12 +726,16 @@ struct ReapplyDrivenProperties_t1258266594;
 struct ReflectionProbe_t175708936;
 // UnityEngine.RenderTexture
 struct RenderTexture_t2108887433;
+// UnityEngine.Renderer
+struct Renderer_t2627027031;
 // UnityEngine.RequireComponent
 struct RequireComponent_t3490506609;
 // UnityEngine.RequireComponent[]
 struct RequireComponentU5BU5D_t2245623724;
 // UnityEngine.ScriptableObject
 struct ScriptableObject_t2528358522;
+// UnityEngine.Scripting.APIUpdating.MovedFromAttribute
+struct MovedFromAttribute_t481952341;
 // UnityEngine.SendMouseEvents/HitInfo[]
 struct HitInfoU5BU5D_t1685002053;
 // UnityEngine.Serialization.FormerlySerializedAsAttribute
@@ -991,6 +997,7 @@ extern String_t* _stringLiteral3851749947;
 extern String_t* _stringLiteral38843055;
 extern String_t* _stringLiteral3908233015;
 extern String_t* _stringLiteral3941509395;
+extern String_t* _stringLiteral3957048425;
 extern String_t* _stringLiteral3960313174;
 extern String_t* _stringLiteral397472472;
 extern String_t* _stringLiteral4015530243;
@@ -1211,6 +1218,7 @@ extern const uint32_t ManagedStreamHelpers_ValidateLoadFromStream_m580138133_Met
 extern const uint32_t Material__ctor_m1662457592_MetadataUsageId;
 extern const uint32_t Material__ctor_m2433149719_MetadataUsageId;
 extern const uint32_t Material__ctor_m249231841_MetadataUsageId;
+extern const uint32_t Material_set_color_m1794818007_MetadataUsageId;
 extern const uint32_t MathfInternal__cctor_m2622893686_MetadataUsageId;
 extern const uint32_t Mathf_Approximately_m245805902_MetadataUsageId;
 extern const uint32_t Mathf_LerpAngle_m295352085_MetadataUsageId;
@@ -1391,6 +1399,7 @@ extern const uint32_t Vector3_ToString_m759076600_MetadataUsageId;
 extern const uint32_t Vector3__cctor_m2599650684_MetadataUsageId;
 extern const uint32_t Vector3_get_forward_m3100859705_MetadataUsageId;
 extern const uint32_t Vector3_get_magnitude_m27958459_MetadataUsageId;
+extern const uint32_t Vector3_get_negativeInfinity_m2199017963_MetadataUsageId;
 extern const uint32_t Vector3_get_normalized_m2454957984_MetadataUsageId;
 extern const uint32_t Vector3_get_up_m3584168373_MetadataUsageId;
 extern const uint32_t Vector3_get_zero_m1409827619_MetadataUsageId;
@@ -1426,6 +1435,7 @@ struct DisplayU5BU5D_t103034768;
 struct ExecuteInEditModeU5BU5D_t3239458680;
 struct PlayerLoopSystemU5BU5D_t1150299252;
 struct KeyframeU5BU5D_t1068524471;
+struct MaterialU5BU5D_t561872642;
 struct PlayableBindingU5BU5D_t829358056;
 struct RequireComponentU5BU5D_t2245623724;
 struct HitInfoU5BU5D_t1685002053;
@@ -10411,6 +10421,46 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // SCENE_T2348375561_H
+#ifndef MOVEDFROMATTRIBUTE_T481952341_H
+#define MOVEDFROMATTRIBUTE_T481952341_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.Scripting.APIUpdating.MovedFromAttribute
+struct  MovedFromAttribute_t481952341  : public Attribute_t861562559
+{
+public:
+	// System.String UnityEngine.Scripting.APIUpdating.MovedFromAttribute::<Namespace>k__BackingField
+	String_t* ___U3CNamespaceU3Ek__BackingField_0;
+	// System.Boolean UnityEngine.Scripting.APIUpdating.MovedFromAttribute::<IsInDifferentAssembly>k__BackingField
+	bool ___U3CIsInDifferentAssemblyU3Ek__BackingField_1;
+
+public:
+	inline static int32_t get_offset_of_U3CNamespaceU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(MovedFromAttribute_t481952341, ___U3CNamespaceU3Ek__BackingField_0)); }
+	inline String_t* get_U3CNamespaceU3Ek__BackingField_0() const { return ___U3CNamespaceU3Ek__BackingField_0; }
+	inline String_t** get_address_of_U3CNamespaceU3Ek__BackingField_0() { return &___U3CNamespaceU3Ek__BackingField_0; }
+	inline void set_U3CNamespaceU3Ek__BackingField_0(String_t* value)
+	{
+		___U3CNamespaceU3Ek__BackingField_0 = value;
+		Il2CppCodeGenWriteBarrier((&___U3CNamespaceU3Ek__BackingField_0), value);
+	}
+
+	inline static int32_t get_offset_of_U3CIsInDifferentAssemblyU3Ek__BackingField_1() { return static_cast<int32_t>(offsetof(MovedFromAttribute_t481952341, ___U3CIsInDifferentAssemblyU3Ek__BackingField_1)); }
+	inline bool get_U3CIsInDifferentAssemblyU3Ek__BackingField_1() const { return ___U3CIsInDifferentAssemblyU3Ek__BackingField_1; }
+	inline bool* get_address_of_U3CIsInDifferentAssemblyU3Ek__BackingField_1() { return &___U3CIsInDifferentAssemblyU3Ek__BackingField_1; }
+	inline void set_U3CIsInDifferentAssemblyU3Ek__BackingField_1(bool value)
+	{
+		___U3CIsInDifferentAssemblyU3Ek__BackingField_1 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MOVEDFROMATTRIBUTE_T481952341_H
 #ifndef HITINFO_T3229609740_H
 #define HITINFO_T3229609740_H
 #ifdef __clang__
@@ -17950,6 +18000,43 @@ public:
 		m_Items[index] = value;
 	}
 };
+// UnityEngine.Material[]
+struct MaterialU5BU5D_t561872642  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) Material_t340375123 * m_Items[1];
+
+public:
+	inline Material_t340375123 * GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Material_t340375123 ** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Material_t340375123 * value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+	inline Material_t340375123 * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Material_t340375123 ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Material_t340375123 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
 // UnityEngine.SendMouseEvents/HitInfo[]
 struct HitInfoU5BU5D_t1685002053  : public RuntimeArray
 {
@@ -18295,8 +18382,6 @@ extern "C" IL2CPP_METHOD_ATTR bool IntPtr_op_Equality_m408849716 (RuntimeObject 
 extern "C" IL2CPP_METHOD_ATTR void ArgumentException__ctor_m1312628991 (ArgumentException_t132251570 * __this, String_t* p0, const RuntimeMethod* method);
 // System.Void UnityEngine.BootConfigData::.ctor(System.IntPtr)
 extern "C" IL2CPP_METHOD_ATTR void BootConfigData__ctor_m4255151374 (BootConfigData_t3818279794 * __this, intptr_t ___nativeHandle0, const RuntimeMethod* method);
-// System.Void UnityEngine.Behaviour::.ctor()
-extern "C" IL2CPP_METHOD_ATTR void Behaviour__ctor_m346897018 (Behaviour_t1437897464 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Camera::get_pixelRect_Injected(UnityEngine.Rect&)
 extern "C" IL2CPP_METHOD_ATTR void Camera_get_pixelRect_Injected_m2326986893 (Camera_t4157153871 * __this, Rect_t2360479859 * ___ret0, const RuntimeMethod* method);
 // System.Void UnityEngine.Camera::ScreenPointToRay_Injected(UnityEngine.Vector2&,UnityEngine.Camera/MonoOrStereoscopicEye,UnityEngine.Ray&)
@@ -18347,8 +18432,8 @@ extern "C" IL2CPP_METHOD_ATTR void Vector4__ctor_m2498754347 (Vector4_t331902893
 extern "C" IL2CPP_METHOD_ATTR void Object__ctor_m1087895580 (Object_t631007953 * __this, const RuntimeMethod* method);
 // UnityEngine.GameObject UnityEngine.Component::get_gameObject()
 extern "C" IL2CPP_METHOD_ATTR GameObject_t1113636619 * Component_get_gameObject_m442555142 (Component_t1923634451 * __this, const RuntimeMethod* method);
-// System.String UnityEngine.GameObject::get_tag()
-extern "C" IL2CPP_METHOD_ATTR String_t* GameObject_get_tag_m3951609671 (GameObject_t1113636619 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.GameObject::set_tag(System.String)
+extern "C" IL2CPP_METHOD_ATTR void GameObject_set_tag_m2353670106 (GameObject_t1113636619 * __this, String_t* ___value0, const RuntimeMethod* method);
 // System.Void UnityEngine.YieldInstruction::.ctor()
 extern "C" IL2CPP_METHOD_ATTR void YieldInstruction__ctor_m1498450609 (YieldInstruction_t403091072 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Coroutine::ReleaseCoroutine(System.IntPtr)
@@ -18650,6 +18735,8 @@ extern "C" IL2CPP_METHOD_ATTR void SupportedRenderingFeatures_IsLightmapBakeType
 extern "C" IL2CPP_METHOD_ATTR int32_t SupportedRenderingFeatures_get_supportedLightmapBakeTypes_m1596512019 (SupportedRenderingFeatures_t353898663 * __this, const RuntimeMethod* method);
 // UnityEngine.LightmapsMode UnityEngine.Experimental.Rendering.SupportedRenderingFeatures::get_supportedLightmapsModes()
 extern "C" IL2CPP_METHOD_ATTR int32_t SupportedRenderingFeatures_get_supportedLightmapsModes_m141329491 (SupportedRenderingFeatures_t353898663 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.Behaviour::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void Behaviour__ctor_m346897018 (Behaviour_t1437897464 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Vector2::.ctor(System.Single,System.Single)
 extern "C" IL2CPP_METHOD_ATTR void Vector2__ctor_m3970636864 (Vector2_t2156229523 * __this, float ___x0, float ___y1, const RuntimeMethod* method);
 // UnityEngine.GUIElement UnityEngine.GUILayer::HitTest(UnityEngine.Vector2)
@@ -18696,6 +18783,14 @@ extern "C" IL2CPP_METHOD_ATTR void Material_CreateWithShader_m1270998153 (Runtim
 extern "C" IL2CPP_METHOD_ATTR void Material_CreateWithMaterial_m2373088899 (RuntimeObject * __this /* static, unused */, Material_t340375123 * ___self0, Material_t340375123 * ___source1, const RuntimeMethod* method);
 // System.Void UnityEngine.Material::CreateWithString(UnityEngine.Material)
 extern "C" IL2CPP_METHOD_ATTR void Material_CreateWithString_m4283839020 (RuntimeObject * __this /* static, unused */, Material_t340375123 * ___self0, const RuntimeMethod* method);
+// System.Void UnityEngine.Material::SetColor(System.String,UnityEngine.Color)
+extern "C" IL2CPP_METHOD_ATTR void Material_SetColor_m2020215303 (Material_t340375123 * __this, String_t* ___name0, Color_t2555686324  ___value1, const RuntimeMethod* method);
+// System.Void UnityEngine.Material::SetColorImpl_Injected(System.Int32,UnityEngine.Color&)
+extern "C" IL2CPP_METHOD_ATTR void Material_SetColorImpl_Injected_m4161420730 (Material_t340375123 * __this, int32_t ___name0, Color_t2555686324 * ___value1, const RuntimeMethod* method);
+// System.Int32 UnityEngine.Shader::PropertyToID(System.String)
+extern "C" IL2CPP_METHOD_ATTR int32_t Shader_PropertyToID_m1030499873 (RuntimeObject * __this /* static, unused */, String_t* ___name0, const RuntimeMethod* method);
+// System.Void UnityEngine.Material::SetColorImpl(System.Int32,UnityEngine.Color)
+extern "C" IL2CPP_METHOD_ATTR void Material_SetColorImpl_m3160281768 (Material_t340375123 * __this, int32_t ___name0, Color_t2555686324  ___value1, const RuntimeMethod* method);
 // System.Single UnityEngine.Mathf::Clamp01(System.Single)
 extern "C" IL2CPP_METHOD_ATTR float Mathf_Clamp01_m56433566 (RuntimeObject * __this /* static, unused */, float ___value0, const RuntimeMethod* method);
 // System.Single UnityEngine.Mathf::Repeat(System.Single,System.Single)
@@ -19177,6 +19272,8 @@ extern "C" IL2CPP_METHOD_ATTR int32_t RenderTextureDescriptor_get_volumeDepth_m3
 extern "C" IL2CPP_METHOD_ATTR int32_t RenderTextureDescriptor_get_msaaSamples_m2437860573 (RenderTextureDescriptor_t1974534975 * __this, const RuntimeMethod* method);
 // System.Int32 UnityEngine.RenderTextureDescriptor::get_depthBufferBits()
 extern "C" IL2CPP_METHOD_ATTR int32_t RenderTextureDescriptor_get_depthBufferBits_m2160829816 (RenderTextureDescriptor_t1974534975 * __this, const RuntimeMethod* method);
+// UnityEngine.Material[] UnityEngine.Renderer::GetMaterialArray()
+extern "C" IL2CPP_METHOD_ATTR MaterialU5BU5D_t561872642* Renderer_GetMaterialArray_m2610428628 (Renderer_t2627027031 * __this, const RuntimeMethod* method);
 // System.Int32 UnityEngine.SceneManagement.Scene::get_handle()
 extern "C" IL2CPP_METHOD_ATTR int32_t Scene_get_handle_m1544696971 (Scene_t2348375561 * __this, const RuntimeMethod* method);
 // System.Int32 UnityEngine.SceneManagement.Scene::GetHashCode()
@@ -19202,6 +19299,12 @@ inline void UnityAction_2_Invoke_m944492567 (UnityAction_2_t1262235195 * __this,
 extern "C" IL2CPP_METHOD_ATTR void ScriptableObject_CreateScriptableObject_m3504774547 (RuntimeObject * __this /* static, unused */, ScriptableObject_t2528358522 * ___self0, const RuntimeMethod* method);
 // UnityEngine.ScriptableObject UnityEngine.ScriptableObject::CreateScriptableObjectInstanceFromType(System.Type)
 extern "C" IL2CPP_METHOD_ATTR ScriptableObject_t2528358522 * ScriptableObject_CreateScriptableObjectInstanceFromType_m2783367459 (RuntimeObject * __this /* static, unused */, Type_t * ___type0, const RuntimeMethod* method);
+// System.Void UnityEngine.Scripting.APIUpdating.MovedFromAttribute::.ctor(System.String,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void MovedFromAttribute__ctor_m1135483886 (MovedFromAttribute_t481952341 * __this, String_t* ___sourceNamespace0, bool ___isInDifferentAssembly1, const RuntimeMethod* method);
+// System.Void UnityEngine.Scripting.APIUpdating.MovedFromAttribute::set_Namespace(System.String)
+extern "C" IL2CPP_METHOD_ATTR void MovedFromAttribute_set_Namespace_m108902551 (MovedFromAttribute_t481952341 * __this, String_t* ___value0, const RuntimeMethod* method);
+// System.Void UnityEngine.Scripting.APIUpdating.MovedFromAttribute::set_IsInDifferentAssembly(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void MovedFromAttribute_set_IsInDifferentAssembly_m4025538826 (MovedFromAttribute_t481952341 * __this, bool ___value0, const RuntimeMethod* method);
 // T UnityEngine.Component::GetComponent<UnityEngine.GUILayer>()
 inline GUILayer_t2783472903 * Component_GetComponent_TisGUILayer_t2783472903_m4244438908 (Component_t1923634451 * __this, const RuntimeMethod* method)
 {
@@ -21218,14 +21321,6 @@ IL_000d:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UnityEngine.Camera::.ctor()
-extern "C" IL2CPP_METHOD_ATTR void Camera__ctor_m741555041 (Camera_t4157153871 * __this, const RuntimeMethod* method)
-{
-	{
-		Behaviour__ctor_m346897018(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
 // System.Single UnityEngine.Camera::get_nearClipPlane()
 extern "C" IL2CPP_METHOD_ATTR float Camera_get_nearClipPlane_m837839537 (Camera_t4157153871 * __this, const RuntimeMethod* method)
 {
@@ -21383,16 +21478,6 @@ extern "C" IL2CPP_METHOD_ATTR GameObject_t1113636619 * Camera_RaycastTry2D_m2460
 		GameObject_t1113636619 * L_2 = Camera_RaycastTry2D_Injected_m85653607(__this, (Ray_t3785851493 *)(&___ray0), L_0, L_1, /*hidden argument*/NULL);
 		return L_2;
 	}
-}
-// UnityEngine.Camera UnityEngine.Camera::get_main()
-extern "C" IL2CPP_METHOD_ATTR Camera_t4157153871 * Camera_get_main_m3643453163 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
-{
-	typedef Camera_t4157153871 * (*Camera_get_main_m3643453163_ftn) ();
-	static Camera_get_main_m3643453163_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Camera_get_main_m3643453163_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Camera::get_main()");
-	Camera_t4157153871 * retVal = _il2cpp_icall_func();
-	return retVal;
 }
 // System.Int32 UnityEngine.Camera::GetAllCamerasCount()
 extern "C" IL2CPP_METHOD_ATTR int32_t Camera_GetAllCamerasCount_m2278705835 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
@@ -22070,22 +22155,15 @@ extern "C" IL2CPP_METHOD_ATTR void Component_GetComponentFastPath_m1180649031 (C
 	_il2cpp_icall_func = (Component_GetComponentFastPath_m1180649031_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Component::GetComponentFastPath(System.Type,System.IntPtr)");
 	_il2cpp_icall_func(__this, ___type0, ___oneFurtherThanResultValue1);
 }
-// System.String UnityEngine.Component::get_tag()
-extern "C" IL2CPP_METHOD_ATTR String_t* Component_get_tag_m2716693327 (Component_t1923634451 * __this, const RuntimeMethod* method)
+// System.Void UnityEngine.Component::set_tag(System.String)
+extern "C" IL2CPP_METHOD_ATTR void Component_set_tag_m2755332569 (Component_t1923634451 * __this, String_t* ___value0, const RuntimeMethod* method)
 {
-	String_t* V_0 = NULL;
 	{
 		GameObject_t1113636619 * L_0 = Component_get_gameObject_m442555142(__this, /*hidden argument*/NULL);
+		String_t* L_1 = ___value0;
 		NullCheck(L_0);
-		String_t* L_1 = GameObject_get_tag_m3951609671(L_0, /*hidden argument*/NULL);
-		V_0 = L_1;
-		goto IL_0012;
-	}
-
-IL_0012:
-	{
-		String_t* L_2 = V_0;
-		return L_2;
+		GameObject_set_tag_m2353670106(L_0, L_1, /*hidden argument*/NULL);
+		return;
 	}
 }
 #ifdef __clang__
@@ -27974,6 +28052,16 @@ extern "C" IL2CPP_METHOD_ATTR void GameObject_GetComponentFastPath_m2620139331 (
 	_il2cpp_icall_func = (GameObject_GetComponentFastPath_m2620139331_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GameObject::GetComponentFastPath(System.Type,System.IntPtr)");
 	_il2cpp_icall_func(__this, ___type0, ___oneFurtherThanResultValue1);
 }
+// System.Array UnityEngine.GameObject::GetComponentsInternal(System.Type,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Object)
+extern "C" IL2CPP_METHOD_ATTR RuntimeArray * GameObject_GetComponentsInternal_m4006738154 (GameObject_t1113636619 * __this, Type_t * ___type0, bool ___useSearchTypeAsArrayReturnType1, bool ___recursive2, bool ___includeInactive3, bool ___reverse4, RuntimeObject * ___resultList5, const RuntimeMethod* method)
+{
+	typedef RuntimeArray * (*GameObject_GetComponentsInternal_m4006738154_ftn) (GameObject_t1113636619 *, Type_t *, bool, bool, bool, bool, RuntimeObject *);
+	static GameObject_GetComponentsInternal_m4006738154_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameObject_GetComponentsInternal_m4006738154_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GameObject::GetComponentsInternal(System.Type,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Object)");
+	RuntimeArray * retVal = _il2cpp_icall_func(__this, ___type0, ___useSearchTypeAsArrayReturnType1, ___recursive2, ___includeInactive3, ___reverse4, ___resultList5);
+	return retVal;
+}
 // System.String UnityEngine.GameObject::get_tag()
 extern "C" IL2CPP_METHOD_ATTR String_t* GameObject_get_tag_m3951609671 (GameObject_t1113636619 * __this, const RuntimeMethod* method)
 {
@@ -27983,6 +28071,15 @@ extern "C" IL2CPP_METHOD_ATTR String_t* GameObject_get_tag_m3951609671 (GameObje
 	_il2cpp_icall_func = (GameObject_get_tag_m3951609671_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GameObject::get_tag()");
 	String_t* retVal = _il2cpp_icall_func(__this);
 	return retVal;
+}
+// System.Void UnityEngine.GameObject::set_tag(System.String)
+extern "C" IL2CPP_METHOD_ATTR void GameObject_set_tag_m2353670106 (GameObject_t1113636619 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	typedef void (*GameObject_set_tag_m2353670106_ftn) (GameObject_t1113636619 *, String_t*);
+	static GameObject_set_tag_m2353670106_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (GameObject_set_tag_m2353670106_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GameObject::set_tag(System.String)");
+	_il2cpp_icall_func(__this, ___value0);
 }
 // System.Void UnityEngine.GameObject::SendMessage(System.String,System.Object,UnityEngine.SendMessageOptions)
 extern "C" IL2CPP_METHOD_ATTR void GameObject_SendMessage_m3720186693 (GameObject_t1113636619 * __this, String_t* ___methodName0, RuntimeObject * ___value1, int32_t ___options2, const RuntimeMethod* method)
@@ -29032,6 +29129,50 @@ extern "C" IL2CPP_METHOD_ATTR void Material_CreateWithString_m4283839020 (Runtim
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Material_CreateWithString_m4283839020_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Material::CreateWithString(UnityEngine.Material)");
 	_il2cpp_icall_func(___self0);
+}
+// System.Void UnityEngine.Material::set_color(UnityEngine.Color)
+extern "C" IL2CPP_METHOD_ATTR void Material_set_color_m1794818007 (Material_t340375123 * __this, Color_t2555686324  ___value0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Material_set_color_m1794818007_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Color_t2555686324  L_0 = ___value0;
+		Material_SetColor_m2020215303(__this, _stringLiteral3957048425, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Material::SetColorImpl(System.Int32,UnityEngine.Color)
+extern "C" IL2CPP_METHOD_ATTR void Material_SetColorImpl_m3160281768 (Material_t340375123 * __this, int32_t ___name0, Color_t2555686324  ___value1, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___name0;
+		Material_SetColorImpl_Injected_m4161420730(__this, L_0, (Color_t2555686324 *)(&___value1), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Material::SetColor(System.String,UnityEngine.Color)
+extern "C" IL2CPP_METHOD_ATTR void Material_SetColor_m2020215303 (Material_t340375123 * __this, String_t* ___name0, Color_t2555686324  ___value1, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___name0;
+		int32_t L_1 = Shader_PropertyToID_m1030499873(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		Color_t2555686324  L_2 = ___value1;
+		Material_SetColorImpl_m3160281768(__this, L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Material::SetColorImpl_Injected(System.Int32,UnityEngine.Color&)
+extern "C" IL2CPP_METHOD_ATTR void Material_SetColorImpl_Injected_m4161420730 (Material_t340375123 * __this, int32_t ___name0, Color_t2555686324 * ___value1, const RuntimeMethod* method)
+{
+	typedef void (*Material_SetColorImpl_Injected_m4161420730_ftn) (Material_t340375123 *, int32_t, Color_t2555686324 *);
+	static Material_SetColorImpl_Injected_m4161420730_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Material_SetColorImpl_Injected_m4161420730_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Material::SetColorImpl_Injected(System.Int32,UnityEngine.Color&)");
+	_il2cpp_icall_func(__this, ___name0, ___value1);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -31943,16 +32084,6 @@ extern "C" IL2CPP_METHOD_ATTR String_t* Object_GetName_m4137306623 (RuntimeObjec
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Object_GetName_m4137306623_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Object::GetName(UnityEngine.Object)");
 	String_t* retVal = _il2cpp_icall_func(___obj0);
-	return retVal;
-}
-// UnityEngine.Object UnityEngine.Object::FindObjectFromInstanceID(System.Int32)
-extern "C" IL2CPP_METHOD_ATTR Object_t631007953 * Object_FindObjectFromInstanceID_m235838713 (RuntimeObject * __this /* static, unused */, int32_t ___instanceID0, const RuntimeMethod* method)
-{
-	typedef Object_t631007953 * (*Object_FindObjectFromInstanceID_m235838713_ftn) (int32_t);
-	static Object_FindObjectFromInstanceID_m235838713_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Object_FindObjectFromInstanceID_m235838713_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Object::FindObjectFromInstanceID(System.Int32)");
-	Object_t631007953 * retVal = _il2cpp_icall_func(___instanceID0);
 	return retVal;
 }
 // System.Void UnityEngine.Object::.cctor()
@@ -35877,6 +36008,32 @@ extern "C" IL2CPP_METHOD_ATTR void RenderTextureDescriptor__cctor_m3115061957 (R
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// UnityEngine.Material[] UnityEngine.Renderer::GetMaterialArray()
+extern "C" IL2CPP_METHOD_ATTR MaterialU5BU5D_t561872642* Renderer_GetMaterialArray_m2610428628 (Renderer_t2627027031 * __this, const RuntimeMethod* method)
+{
+	typedef MaterialU5BU5D_t561872642* (*Renderer_GetMaterialArray_m2610428628_ftn) (Renderer_t2627027031 *);
+	static Renderer_GetMaterialArray_m2610428628_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Renderer_GetMaterialArray_m2610428628_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Renderer::GetMaterialArray()");
+	MaterialU5BU5D_t561872642* retVal = _il2cpp_icall_func(__this);
+	return retVal;
+}
+// UnityEngine.Material[] UnityEngine.Renderer::get_materials()
+extern "C" IL2CPP_METHOD_ATTR MaterialU5BU5D_t561872642* Renderer_get_materials_m2188790026 (Renderer_t2627027031 * __this, const RuntimeMethod* method)
+{
+	MaterialU5BU5D_t561872642* V_0 = NULL;
+	{
+		MaterialU5BU5D_t561872642* L_0 = Renderer_GetMaterialArray_m2610428628(__this, /*hidden argument*/NULL);
+		V_0 = L_0;
+		goto IL_000d;
+	}
+
+IL_000d:
+	{
+		MaterialU5BU5D_t561872642* L_1 = V_0;
+		return L_1;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -36265,6 +36422,53 @@ extern "C" IL2CPP_METHOD_ATTR ScriptableObject_t2528358522 * ScriptableObject_Cr
 	_il2cpp_icall_func = (ScriptableObject_CreateScriptableObjectInstanceFromType_m2783367459_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ScriptableObject::CreateScriptableObjectInstanceFromType(System.Type)");
 	ScriptableObject_t2528358522 * retVal = _il2cpp_icall_func(___type0);
 	return retVal;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.Scripting.APIUpdating.MovedFromAttribute::.ctor(System.String)
+extern "C" IL2CPP_METHOD_ATTR void MovedFromAttribute__ctor_m3367971602 (MovedFromAttribute_t481952341 * __this, String_t* ___sourceNamespace0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___sourceNamespace0;
+		MovedFromAttribute__ctor_m1135483886(__this, L_0, (bool)0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Scripting.APIUpdating.MovedFromAttribute::.ctor(System.String,System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void MovedFromAttribute__ctor_m1135483886 (MovedFromAttribute_t481952341 * __this, String_t* ___sourceNamespace0, bool ___isInDifferentAssembly1, const RuntimeMethod* method)
+{
+	{
+		Attribute__ctor_m1529526131(__this, /*hidden argument*/NULL);
+		String_t* L_0 = ___sourceNamespace0;
+		MovedFromAttribute_set_Namespace_m108902551(__this, L_0, /*hidden argument*/NULL);
+		bool L_1 = ___isInDifferentAssembly1;
+		MovedFromAttribute_set_IsInDifferentAssembly_m4025538826(__this, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.Scripting.APIUpdating.MovedFromAttribute::set_Namespace(System.String)
+extern "C" IL2CPP_METHOD_ATTR void MovedFromAttribute_set_Namespace_m108902551 (MovedFromAttribute_t481952341 * __this, String_t* ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->set_U3CNamespaceU3Ek__BackingField_0(L_0);
+		return;
+	}
+}
+// System.Void UnityEngine.Scripting.APIUpdating.MovedFromAttribute::set_IsInDifferentAssembly(System.Boolean)
+extern "C" IL2CPP_METHOD_ATTR void MovedFromAttribute_set_IsInDifferentAssembly_m4025538826 (MovedFromAttribute_t481952341 * __this, bool ___value0, const RuntimeMethod* method)
+{
+	{
+		bool L_0 = ___value0;
+		__this->set_U3CIsInDifferentAssemblyU3Ek__BackingField_1(L_0);
+		return;
+	}
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -37494,6 +37698,16 @@ IL_0033:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Int32 UnityEngine.Shader::PropertyToID(System.String)
+extern "C" IL2CPP_METHOD_ATTR int32_t Shader_PropertyToID_m1030499873 (RuntimeObject * __this /* static, unused */, String_t* ___name0, const RuntimeMethod* method)
+{
+	typedef int32_t (*Shader_PropertyToID_m1030499873_ftn) (String_t*);
+	static Shader_PropertyToID_m1030499873_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Shader_PropertyToID_m1030499873_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Shader::PropertyToID(System.String)");
+	int32_t retVal = _il2cpp_icall_func(___name0);
+	return retVal;
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -41571,6 +41785,30 @@ extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Vector3_get_up_m3584168373 (R
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Vector3_t3722313464_il2cpp_TypeInfo_var);
 		Vector3_t3722313464  L_0 = ((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->get_upVector_7();
+		V_0 = L_0;
+		goto IL_000c;
+	}
+
+IL_000c:
+	{
+		Vector3_t3722313464  L_1 = V_0;
+		return L_1;
+	}
+}
+// UnityEngine.Vector3 UnityEngine.Vector3::get_negativeInfinity()
+extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  Vector3_get_negativeInfinity_m2199017963 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Vector3_get_negativeInfinity_m2199017963_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector3_t3722313464  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Vector3_t3722313464_il2cpp_TypeInfo_var);
+		Vector3_t3722313464  L_0 = ((Vector3_t3722313464_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t3722313464_il2cpp_TypeInfo_var))->get_negativeInfinityVector_14();
 		V_0 = L_0;
 		goto IL_000c;
 	}

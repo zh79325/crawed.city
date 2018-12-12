@@ -26,13 +26,27 @@ public class CommonBotScript : AbstractBot {
     // Update is called once per frame
     void Update()
     {
-      
+
+        if (this.Leader != null)
+        {
+
+
+            Follow(Leader);
+           
+//            float distanceWanted = 0.3f;
+//            Vector3 leaderPos = Leader.transform.position;
+//            Vector3 diff = transform.position - leaderPos;
+//            diff.y = 0.0f; // ignore Y (as requested in question)
+//            transform.position = leaderPos + diff.normalized * distanceWanted;
+//            transform.position = Vector3.Lerp(transform.position, this.Leader.transform.position, Time.time);
+            return;
+        }
         timeCounter1 += Time.deltaTime;
         //如果移动的计时器小于移动时间，则进行移动，否则暂停计时器累加，当暂停计时器大于暂停时间时，重置
         if (timeCounter1 < moveTime)
         {
            var target = new Vector3(vel_x, 0,  vel_y);
-           WalkTo(target);
+            MoveTo(target);
         }
         else
         {
@@ -47,6 +61,9 @@ public class CommonBotScript : AbstractBot {
         }
         Check();
     }
+
+ 
+
     //对参数赋值
     void Change()
     {

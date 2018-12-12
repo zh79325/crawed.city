@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
+    public  const float MaxSize = 5f;
     public GameObject enemySpawn; // 存放陨石prefab
     public int enemyCount; // 每一波陨石的个数
 
@@ -18,7 +19,7 @@ public class GameController : MonoBehaviour
             //targetRender.material = material;
             for (int i = 0; i < enemyCount; i++)
             {
-                Vector3 spawnPosition = new Vector3(Random.Range(-50, 50), 0, Random.Range(-50, 50));
+                Vector3 spawnPosition = new Vector3(Random.Range(-MaxSize, MaxSize), 0, Random.Range(-MaxSize, MaxSize));
                 Quaternion spawnRotation = Quaternion.identity;
 
                 GameObject newObj = Instantiate(enemySpawn, spawnPosition, spawnRotation);
@@ -30,6 +31,8 @@ public class GameController : MonoBehaviour
             }
         }
     }
+
+   
 
     // Update is called once per frame
     void Update()

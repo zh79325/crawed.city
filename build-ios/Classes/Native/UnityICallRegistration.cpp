@@ -1,5 +1,17 @@
 void RegisterAllStrippedInternalCalls()
 {
+	//Start Registrations for type : UnityEngine.AI.NavMeshAgent
+
+		//System.Boolean UnityEngine.AI.NavMeshAgent::INTERNAL_CALL_SetDestination(UnityEngine.AI.NavMeshAgent,UnityEngine.Vector3&)
+		void Register_UnityEngine_AI_NavMeshAgent_INTERNAL_CALL_SetDestination();
+		Register_UnityEngine_AI_NavMeshAgent_INTERNAL_CALL_SetDestination();
+
+		//System.Void UnityEngine.AI.NavMeshAgent::set_speed(System.Single)
+		void Register_UnityEngine_AI_NavMeshAgent_set_speed();
+		Register_UnityEngine_AI_NavMeshAgent_set_speed();
+
+	//End Registrations for type : UnityEngine.AI.NavMeshAgent
+
 	//Start Registrations for type : UnityEngine.Analytics.CustomEventData
 
 		//System.Boolean UnityEngine.Analytics.CustomEventData::AddBool(System.String,System.Boolean)
@@ -242,10 +254,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Camera_get_pixelRect_Injected();
 		Register_UnityEngine_Camera_get_pixelRect_Injected();
 
-		//UnityEngine.Camera UnityEngine.Camera::get_main()
-		void Register_UnityEngine_Camera_get_main();
-		Register_UnityEngine_Camera_get_main();
-
 		//UnityEngine.CameraClearFlags UnityEngine.Camera::get_clearFlags()
 		void Register_UnityEngine_Camera_get_clearFlags();
 		Register_UnityEngine_Camera_get_clearFlags();
@@ -402,6 +410,10 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.GameObject
 
+		//System.Array UnityEngine.GameObject::GetComponentsInternal(System.Type,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Object)
+		void Register_UnityEngine_GameObject_GetComponentsInternal();
+		Register_UnityEngine_GameObject_GetComponentsInternal();
+
 		//System.String UnityEngine.GameObject::get_tag()
 		void Register_UnityEngine_GameObject_get_tag();
 		Register_UnityEngine_GameObject_get_tag();
@@ -417,6 +429,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.GameObject::SendMessage(System.String,System.Object,UnityEngine.SendMessageOptions)
 		void Register_UnityEngine_GameObject_SendMessage();
 		Register_UnityEngine_GameObject_SendMessage();
+
+		//System.Void UnityEngine.GameObject::set_tag(System.String)
+		void Register_UnityEngine_GameObject_set_tag();
+		Register_UnityEngine_GameObject_set_tag();
 
 	//End Registrations for type : UnityEngine.GameObject
 
@@ -586,6 +602,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Material_CreateWithString();
 		Register_UnityEngine_Material_CreateWithString();
 
+		//System.Void UnityEngine.Material::SetColorImpl_Injected(System.Int32,UnityEngine.Color&)
+		void Register_UnityEngine_Material_SetColorImpl_Injected();
+		Register_UnityEngine_Material_SetColorImpl_Injected();
+
 	//End Registrations for type : UnityEngine.Material
 
 	//Start Registrations for type : UnityEngine.Mesh
@@ -681,10 +701,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Object::set_hideFlags(UnityEngine.HideFlags)
 		void Register_UnityEngine_Object_set_hideFlags();
 		Register_UnityEngine_Object_set_hideFlags();
-
-		//UnityEngine.Object UnityEngine.Object::FindObjectFromInstanceID(System.Int32)
-		void Register_UnityEngine_Object_FindObjectFromInstanceID();
-		Register_UnityEngine_Object_FindObjectFromInstanceID();
 
 		//UnityEngine.Object UnityEngine.Object::Internal_InstantiateSingle_Injected(UnityEngine.Object,UnityEngine.Vector3&,UnityEngine.Quaternion&)
 		void Register_UnityEngine_Object_Internal_InstantiateSingle_Injected();
@@ -852,6 +868,14 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.RemoteConfigSettings
 
+	//Start Registrations for type : UnityEngine.Renderer
+
+		//UnityEngine.Material[] UnityEngine.Renderer::GetMaterialArray()
+		void Register_UnityEngine_Renderer_GetMaterialArray();
+		Register_UnityEngine_Renderer_GetMaterialArray();
+
+	//End Registrations for type : UnityEngine.Renderer
+
 	//Start Registrations for type : UnityEngine.RenderTexture
 
 		//System.Void UnityEngine.RenderTexture::INTERNAL_CALL_GetDescriptor(UnityEngine.RenderTexture,UnityEngine.RenderTextureDescriptor&)
@@ -911,6 +935,14 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_ScriptableObject_CreateScriptableObjectInstanceFromType();
 
 	//End Registrations for type : UnityEngine.ScriptableObject
+
+	//Start Registrations for type : UnityEngine.Shader
+
+		//System.Int32 UnityEngine.Shader::PropertyToID(System.String)
+		void Register_UnityEngine_Shader_PropertyToID();
+		Register_UnityEngine_Shader_PropertyToID();
+
+	//End Registrations for type : UnityEngine.Shader
 
 	//Start Registrations for type : UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform
 

@@ -279,6 +279,8 @@ extern "C" void RemoteConfigSettings_t1247263429_marshal_pinvoke_cleanup(void* m
 extern const RuntimeType RemoteConfigSettings_t1247263429_0_0_0;
 extern "C" void DelegatePInvokeWrapper_UpdatedEventHandler_t1027848393();
 extern const RuntimeType UpdatedEventHandler_t1027848393_0_0_0;
+extern "C" void DelegatePInvokeWrapper_OnNavMeshPreUpdate_t1580782682();
+extern const RuntimeType OnNavMeshPreUpdate_t1580782682_0_0_0;
 extern "C" void AnimationEvent_t1536042487_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 extern "C" void AnimationEvent_t1536042487_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 extern "C" void AnimationEvent_t1536042487_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -359,7 +361,7 @@ extern "C" void CertificateHandler_t2739891000_marshal_pinvoke_cleanup(void* mar
 extern const RuntimeType CertificateHandler_t2739891000_0_0_0;
 extern "C" void DelegatePInvokeWrapper_OnTrigger_t4184125570();
 extern const RuntimeType OnTrigger_t4184125570_0_0_0;
-extern Il2CppInteropData g_Il2CppInteropData[100] = 
+extern Il2CppInteropData g_Il2CppInteropData[101] = 
 {
 	{ NULL, Context_t1744531130_marshal_pinvoke, Context_t1744531130_marshal_pinvoke_back, Context_t1744531130_marshal_pinvoke_cleanup, NULL, NULL, &Context_t1744531130_0_0_0 } /* Mono.Globalization.Unicode.SimpleCollator/Context */,
 	{ NULL, Escape_t3294788190_marshal_pinvoke, Escape_t3294788190_marshal_pinvoke_back, Escape_t3294788190_marshal_pinvoke_cleanup, NULL, NULL, &Escape_t3294788190_0_0_0 } /* Mono.Globalization.Unicode.SimpleCollator/Escape */,
@@ -436,6 +438,7 @@ extern Il2CppInteropData g_Il2CppInteropData[100] =
 	{ NULL, UnityAnalyticsHandler_t3011359618_marshal_pinvoke, UnityAnalyticsHandler_t3011359618_marshal_pinvoke_back, UnityAnalyticsHandler_t3011359618_marshal_pinvoke_cleanup, NULL, NULL, &UnityAnalyticsHandler_t3011359618_0_0_0 } /* UnityEngine.Analytics.UnityAnalyticsHandler */,
 	{ NULL, RemoteConfigSettings_t1247263429_marshal_pinvoke, RemoteConfigSettings_t1247263429_marshal_pinvoke_back, RemoteConfigSettings_t1247263429_marshal_pinvoke_cleanup, NULL, NULL, &RemoteConfigSettings_t1247263429_0_0_0 } /* UnityEngine.RemoteConfigSettings */,
 	{ DelegatePInvokeWrapper_UpdatedEventHandler_t1027848393, NULL, NULL, NULL, NULL, NULL, &UpdatedEventHandler_t1027848393_0_0_0 } /* UnityEngine.RemoteSettings/UpdatedEventHandler */,
+	{ DelegatePInvokeWrapper_OnNavMeshPreUpdate_t1580782682, NULL, NULL, NULL, NULL, NULL, &OnNavMeshPreUpdate_t1580782682_0_0_0 } /* UnityEngine.AI.NavMesh/OnNavMeshPreUpdate */,
 	{ NULL, AnimationEvent_t1536042487_marshal_pinvoke, AnimationEvent_t1536042487_marshal_pinvoke_back, AnimationEvent_t1536042487_marshal_pinvoke_cleanup, NULL, NULL, &AnimationEvent_t1536042487_0_0_0 } /* UnityEngine.AnimationEvent */,
 	{ DelegatePInvokeWrapper_OnOverrideControllerDirtyCallback_t1307045488, NULL, NULL, NULL, NULL, NULL, &OnOverrideControllerDirtyCallback_t1307045488_0_0_0 } /* UnityEngine.AnimatorOverrideController/OnOverrideControllerDirtyCallback */,
 	{ NULL, AnimatorTransitionInfo_t2534804151_marshal_pinvoke, AnimatorTransitionInfo_t2534804151_marshal_pinvoke_back, AnimatorTransitionInfo_t2534804151_marshal_pinvoke_cleanup, NULL, NULL, &AnimatorTransitionInfo_t2534804151_0_0_0 } /* UnityEngine.AnimatorTransitionInfo */,

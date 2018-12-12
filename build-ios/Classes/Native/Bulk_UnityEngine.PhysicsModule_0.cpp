@@ -30,8 +30,14 @@ struct Void_t1185182177;
 struct CharacterController_t1138636865;
 // UnityEngine.Collider
 struct Collider_t1773347010;
+// UnityEngine.Collision
+struct Collision_t4262080450;
+// UnityEngine.Component
+struct Component_t1923634451;
 // UnityEngine.ContactPoint[]
 struct ContactPointU5BU5D_t872956888;
+// UnityEngine.GameObject
+struct GameObject_t1113636619;
 // UnityEngine.Object
 struct Object_t631007953;
 // UnityEngine.RaycastHit[]
@@ -39,22 +45,21 @@ struct RaycastHitU5BU5D_t1690781147;
 // UnityEngine.Rigidbody
 struct Rigidbody_t3916780224;
 
-extern RuntimeClass* Collider_t1773347010_il2cpp_TypeInfo_var;
 extern RuntimeClass* Object_t631007953_il2cpp_TypeInfo_var;
 extern RuntimeClass* RaycastHitU5BU5D_t1690781147_il2cpp_TypeInfo_var;
 extern RuntimeClass* Vector3_t3722313464_il2cpp_TypeInfo_var;
+extern const uint32_t Collision_get_gameObject_m3662658840_MetadataUsageId;
 extern const uint32_t Physics_Internal_RaycastTest_m1784372019_MetadataUsageId;
 extern const uint32_t Physics_RaycastAll_m3084184534_MetadataUsageId;
 extern const uint32_t Physics_Raycast_m3101461809_MetadataUsageId;
-extern const uint32_t RaycastHit_get_collider_m1464180279_MetadataUsageId;
 struct ContactPoint_t3758755253 ;
 
 struct ContactPointU5BU5D_t872956888;
 struct RaycastHitU5BU5D_t1690781147;
 
 
-#ifndef U3CMODULEU3E_T692745537_H
-#define U3CMODULEU3E_T692745537_H
+#ifndef U3CMODULEU3E_T692745538_H
+#define U3CMODULEU3E_T692745538_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -62,7 +67,7 @@ struct RaycastHitU5BU5D_t1690781147;
 #endif
 
 // <Module>
-struct  U3CModuleU3E_t692745537 
+struct  U3CModuleU3E_t692745538 
 {
 public:
 
@@ -72,7 +77,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // U3CMODULEU3E_T692745537_H
+#endif // U3CMODULEU3E_T692745538_H
 #ifndef RUNTIMEOBJECT_H
 #define RUNTIMEOBJECT_H
 #ifdef __clang__
@@ -1149,6 +1154,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // COMPONENT_T1923634451_H
+#ifndef GAMEOBJECT_T1113636619_H
+#define GAMEOBJECT_T1113636619_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.GameObject
+struct  GameObject_t1113636619  : public Object_t631007953
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // GAMEOBJECT_T1113636619_H
 #ifndef COLLIDER_T1773347010_H
 #define COLLIDER_T1773347010_H
 #ifdef __clang__
@@ -1362,6 +1387,10 @@ public:
 
 
 
+// System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
+extern "C" IL2CPP_METHOD_ATTR bool Object_op_Inequality_m4071470834 (RuntimeObject * __this /* static, unused */, Object_t631007953 * p0, Object_t631007953 * p1, const RuntimeMethod* method);
+// UnityEngine.GameObject UnityEngine.Component::get_gameObject()
+extern "C" IL2CPP_METHOD_ATTR GameObject_t1113636619 * Component_get_gameObject_m442555142 (Component_t1923634451 * __this, const RuntimeMethod* method);
 // System.Boolean UnityEngine.Physics::Query_RaycastTest_Injected(UnityEngine.Ray&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
 extern "C" IL2CPP_METHOD_ATTR bool Physics_Query_RaycastTest_Injected_m2116672205 (RuntimeObject * __this /* static, unused */, Ray_t3785851493 * ___ray0, float ___maxDistance1, int32_t ___layerMask2, int32_t ___queryTriggerInteraction3, const RuntimeMethod* method);
 // System.Single UnityEngine.Vector3::get_magnitude()
@@ -1392,12 +1421,6 @@ extern "C" IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t1690781147* Physics_Internal_Ray
 extern "C" IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t1690781147* Physics_Internal_RaycastAll_m3145440557 (RuntimeObject * __this /* static, unused */, Ray_t3785851493  ___ray0, float ___maxDistance1, int32_t ___mask2, int32_t ___queryTriggerInteraction3, const RuntimeMethod* method);
 // UnityEngine.RaycastHit[] UnityEngine.Physics::RaycastAll(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
 extern "C" IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t1690781147* Physics_RaycastAll_m3084184534 (RuntimeObject * __this /* static, unused */, Vector3_t3722313464  ___origin0, Vector3_t3722313464  ___direction1, float ___maxDistance2, int32_t ___layerMask3, int32_t ___queryTriggerInteraction4, const RuntimeMethod* method);
-// UnityEngine.Object UnityEngine.Object::FindObjectFromInstanceID(System.Int32)
-extern "C" IL2CPP_METHOD_ATTR Object_t631007953 * Object_FindObjectFromInstanceID_m235838713 (RuntimeObject * __this /* static, unused */, int32_t p0, const RuntimeMethod* method);
-// UnityEngine.Collider UnityEngine.RaycastHit::get_collider()
-extern "C" IL2CPP_METHOD_ATTR Collider_t1773347010 * RaycastHit_get_collider_m1464180279 (RaycastHit_t1056001966 * __this, const RuntimeMethod* method);
-// UnityEngine.Vector3 UnityEngine.RaycastHit::get_point()
-extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  RaycastHit_get_point_m2236647085 (RaycastHit_t1056001966 * __this, const RuntimeMethod* method);
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -1472,6 +1495,54 @@ extern "C" void Collision_t4262080450_marshal_com_back(const Collision_t42620804
 // Conversion method for clean up from marshalling of: UnityEngine.Collision
 extern "C" void Collision_t4262080450_marshal_com_cleanup(Collision_t4262080450_marshaled_com& marshaled)
 {
+}
+// UnityEngine.GameObject UnityEngine.Collision::get_gameObject()
+extern "C" IL2CPP_METHOD_ATTR GameObject_t1113636619 * Collision_get_gameObject_m3662658840 (Collision_t4262080450 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Collision_get_gameObject_m3662658840_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	GameObject_t1113636619 * V_0 = NULL;
+	GameObject_t1113636619 * G_B3_0 = NULL;
+	{
+		Rigidbody_t3916780224 * L_0 = __this->get_m_Rigidbody_2();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
+		bool L_1 = Object_op_Inequality_m4071470834(NULL /*static, unused*/, L_0, (Object_t631007953 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		Rigidbody_t3916780224 * L_2 = __this->get_m_Rigidbody_2();
+		NullCheck(L_2);
+		GameObject_t1113636619 * L_3 = Component_get_gameObject_m442555142(L_2, /*hidden argument*/NULL);
+		G_B3_0 = L_3;
+		goto IL_002d;
+	}
+
+IL_0022:
+	{
+		Collider_t1773347010 * L_4 = __this->get_m_Collider_3();
+		NullCheck(L_4);
+		GameObject_t1113636619 * L_5 = Component_get_gameObject_m442555142(L_4, /*hidden argument*/NULL);
+		G_B3_0 = L_5;
+	}
+
+IL_002d:
+	{
+		V_0 = G_B3_0;
+		goto IL_0033;
+	}
+
+IL_0033:
+	{
+		GameObject_t1113636619 * L_6 = V_0;
+		return L_6;
+	}
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -2214,57 +2285,6 @@ extern "C" IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t1690781147* Physics_Internal_Ray
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// UnityEngine.Collider UnityEngine.RaycastHit::get_collider()
-extern "C" IL2CPP_METHOD_ATTR Collider_t1773347010 * RaycastHit_get_collider_m1464180279 (RaycastHit_t1056001966 * __this, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (RaycastHit_get_collider_m1464180279_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	Collider_t1773347010 * V_0 = NULL;
-	{
-		int32_t L_0 = __this->get_m_Collider_5();
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t631007953_il2cpp_TypeInfo_var);
-		Object_t631007953 * L_1 = Object_FindObjectFromInstanceID_m235838713(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		V_0 = ((Collider_t1773347010 *)IsInstClass((RuntimeObject*)L_1, Collider_t1773347010_il2cpp_TypeInfo_var));
-		goto IL_0017;
-	}
-
-IL_0017:
-	{
-		Collider_t1773347010 * L_2 = V_0;
-		return L_2;
-	}
-}
-extern "C"  Collider_t1773347010 * RaycastHit_get_collider_m1464180279_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
-{
-	RaycastHit_t1056001966 * _thisAdjusted = reinterpret_cast<RaycastHit_t1056001966 *>(__this + 1);
-	return RaycastHit_get_collider_m1464180279(_thisAdjusted, method);
-}
-// UnityEngine.Vector3 UnityEngine.RaycastHit::get_point()
-extern "C" IL2CPP_METHOD_ATTR Vector3_t3722313464  RaycastHit_get_point_m2236647085 (RaycastHit_t1056001966 * __this, const RuntimeMethod* method)
-{
-	Vector3_t3722313464  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	{
-		Vector3_t3722313464  L_0 = __this->get_m_Point_0();
-		V_0 = L_0;
-		goto IL_000d;
-	}
-
-IL_000d:
-	{
-		Vector3_t3722313464  L_1 = V_0;
-		return L_1;
-	}
-}
-extern "C"  Vector3_t3722313464  RaycastHit_get_point_m2236647085_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
-{
-	RaycastHit_t1056001966 * _thisAdjusted = reinterpret_cast<RaycastHit_t1056001966 *>(__this + 1);
-	return RaycastHit_get_point_m2236647085(_thisAdjusted, method);
-}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

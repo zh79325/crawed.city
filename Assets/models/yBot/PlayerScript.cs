@@ -6,6 +6,12 @@ using UnityEngine;
 
 public class PlayerScript : AbstractBot
 {
+    public PlayerScript()
+    :base()
+    {
+        IsLeader = true;
+    }
+
     Vector3 _direction = Vector3.zero;
     Vector3 _lastScreemPosition = Vector3.negativeInfinity;
     private bool running = false;
@@ -17,6 +23,7 @@ public class PlayerScript : AbstractBot
     void Start()
     {
         base.Start();
+        AddMember(this);
     }
 
 
@@ -44,8 +51,11 @@ public class PlayerScript : AbstractBot
         {
             return;
         }
-
-        RunTo(_direction);
+        
+        var target =transform.position+ _direction.normalized * GetSpeed();
+        print("move to direct => " +_direction.normalized);
+        target.y = 0;
+        MoveTo(target);
 
 
         //松开鼠标右键时
@@ -65,24 +75,26 @@ public class PlayerScript : AbstractBot
         }
 
         float dis = Vector3.Distance(screenP, _lastScreemPosition);
-       
+
         if (dis < 10)
         {
             return Vector3.zero;
         }
 
         Vector3 d = screenP - _lastScreemPosition;
-        Vector3 newDirection = new Vector3(d.x, 0, d.y);
+        Vector3 newDirection = new Vector3(d.x, 0.1f, d.y);
 
         if (_direction == Vector3.zero)
         {
             return newDirection;
         }
+
         float ang = Vector3.Angle(newDirection, _direction);
         if (ang < 3)
         {
             return Vector3.zero;
         }
+
         _lastScreemPosition = screenP;
         return newDirection;
     }
