@@ -145,7 +145,7 @@ namespace UnityEngine
 
 //            Vector3 dest = transform.position + normalized * speed * r * Time.deltaTime;
 //            transform.position += normalized * speed * r * Time.deltaTime;
-//            transform.LookAt(dest);
+            transform.LookAt(dest);
             MAngent.speed = GetSpeed();
             MAngent.SetDestination(dest);
         }

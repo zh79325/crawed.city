@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    public  const float MaxSize = 5f;
+    public  const float MaxSize = 10f;
     public GameObject enemySpawn; // 存放陨石prefab
     public int enemyCount; // 每一波陨石的个数
 
