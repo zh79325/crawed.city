@@ -53,7 +53,7 @@ public class PlayerScript : AbstractBot
         }
         
         var target =transform.position+ _direction.normalized * GetSpeed();
-        print("move to direct => " +_direction.normalized);
+//        print("move to direct => " +_direction.normalized);
         target.y = 0;
         MoveTo(target);
 
@@ -111,7 +111,7 @@ public class PlayerScript : AbstractBot
 
         if (GUI.Button(new Rect(100, 0, 100, 30), "Running"))
         {
-            System.Console.WriteLine("=====Running=====");
+//            System.Console.WriteLine("=====Running=====");
             animation.Play("yRunning");
             animation.PlayQueued("yIdle"); //播放完attack之后再播放idle
         }

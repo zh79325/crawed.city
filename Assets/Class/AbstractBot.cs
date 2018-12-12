@@ -95,13 +95,21 @@ namespace UnityEngine
             {
                 bot.Leader.RemoveMember(bot);
             }
-            bot.ChangeRunStatus(true);
-            this.AddMember(bot);
-            print("collision==>" + o + ":" + b.GetType().Name);
+          
+            bool ok=this.AddMember(bot);
+            if (ok)
+            {
+                bot.ChangeRunStatus(true);
+            }
+//            print("collision==>" + o + ":" + b.GetType().Name);
         }
 
-        public void AddMember(AbstractBot bot)
+        public bool AddMember(AbstractBot bot)
         {
+            if (bot.BotId == null)
+            {
+                return false;
+            }
             if (Group == null)
             {
                 Group = new Dictionary<string, AbstractBot>();
@@ -110,6 +118,7 @@ namespace UnityEngine
 //            bot.MAngent.destination = this.transform.position;
             bot.Leader = this;
             Group.Add(bot.BotId, bot);
+            return true;
         }
 
         public void RemoveMember(AbstractBot bot)
