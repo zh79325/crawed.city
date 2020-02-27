@@ -50,7 +50,7 @@ public class CommonBotScript : AbstractBot {
             var y0 = transform.position.y;
            var target =direct + transform.position;
             target.y = y0;
-            print(direct+"=>"+target);
+//            print(direct+"=>"+target);
             MoveTo(target);
         }
         else

@@ -4,8 +4,10 @@ using UnityEngine.AI;
 
 namespace UnityEngine
 {
+    
     public abstract class AbstractBot : MonoBehaviour
     {
+        static readonly Dictionary<string,Material> Materials=new Dictionary<string, Material>();
         public int Health { get; private set; }
         public string BotId { get; private set; }
         public bool IsLeader { get; set; }
@@ -160,13 +162,27 @@ namespace UnityEngine
             Renderer[] renders = GetComponentsInChildren<Renderer>();
             foreach (var render in renders)
             {
-                foreach (var material in render.materials)
-                {
-                    material.color = c;
-                }
+                render.sharedMaterial=GetMaterialByColor(c,render.material);
+//                foreach (var material in render.materials)
+//                {
+//                    material.color = c;
+//                }
             }
         }
 
+        Material GetMaterialByColor(Color color, Material material)
+        {
+            var k = color.ToString();
+            if (Materials.ContainsKey(k))
+            {
+                return Materials[k];
+            }
+            Material m= new Material(material.shader);
+            m.CopyPropertiesFromMaterial(material);
+            m.color=color;
+            Materials[k]=m;
+            return m;
+        }
         public void Start()
         {
             BotId = PotatoUtil.RandomString(10);

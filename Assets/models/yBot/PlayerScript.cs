@@ -7,7 +7,6 @@ using UnityEngine;
 public class PlayerScript : AbstractBot
 {
     public PlayerScript()
-    :base()
     {
         IsLeader = true;
     }

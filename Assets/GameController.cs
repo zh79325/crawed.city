@@ -8,13 +8,12 @@ public class GameController : MonoBehaviour
     public GameObject enemySpawn; // 存放陨石prefab
     public int enemyCount; // 每一波陨石的个数
 
-
+    
     // Use this for initialization
     void Start()
     {
         {
-            Color whateverColor = new Color(1, 1, 1, 1);
-
+           
             //MeshRenderer targetRender = enemySpawn.GetComponent<MeshRenderer>();
             //targetRender.material = material;
             for (int i = 0; i < enemyCount; i++)
